@@ -18,31 +18,29 @@
   <body>
     <!-- Шапка -->
     <header class="page-header">
-      <div class="container nav-part">
-        <a href="./index.html" lang="en" class="logo"
-          >Web <span class="logo-part">Studio</span></a
+      <div class="container container--nav-part">
+        <a href="./index.html" lang="en" class="logo logo--head"
+          >Web <span class="logo__part">Studio</span></a
         >
         <nav class="main-nav">
-          <ul class="main-nav list">
-            <li><a href="./index.html" class="link">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
-            </li>
-            <li><a href="./" class="link">Контакти</a></li>
+          <ul class="main-nav__list">
+            <li><a href="./index.html" class="main-nav__link">Студія</a></li>
+            <li><a href="./portfolio.html" class="main-nav__link  main-nav__link--current">Портфоліо</a></li>
+            <li><a href="./" class="main-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="nav-adress">
-          <li class="list-item">
-            <a href="mailto:info@devstudio.com" class="adress-link">
-              <svg class="nav-adress-ico" width="16" height="12">
+        <ul class="adress-list">
+          <li class="adress-list__item">
+            <a href="mailto:info@devstudio.com" class="adress-list__link">
+              <svg class="adress-list__ico" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="list-item">
-            <a href="tel:+380961111111" class="adress-link">
-              <svg class="nav-adress-ico" width="10" height="16">
+          <li class="adress-list__item">
+            <a href="tel:+380961111111" class="adress-list__link">
+              <svg class="adress-list__ico" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -55,23 +53,23 @@
     <main>
       <section class="portfolio section">
         <div class="container">
-          <h1 class="title hide">Портфоліо</h1>
+          <h1 class="title vissually-hidden">Портфоліо</h1>
           <!-- Фільтри -->
           <ul class="filter-group">
             <li class="filter-items">
-              <button type="button" class="buttons filter">Усі</button>
+              <button type="button" class="buttons buttons--filter">Усі</button>
             </li>
             <li class="filter-items">
-              <button type="button" class="buttons filter">Веб-сайти</button>
+              <button type="button" class="buttons buttons--filter">Веб-сайти</button>
             </li>
             <li class="filter-items">
-              <button type="button" class="buttons filter">Додатки</button>
+              <button type="button" class="buttons buttons--filter">Додатки</button>
             </li>
             <li class="filter-items">
-              <button type="button" class="buttons filter">Дизайн</button>
+              <button type="button" class="buttons buttons--filter">Дизайн</button>
             </li>
             <li class="filter-items">
-              <button type="button" class="buttons filter">Маркетинг</button>
+              <button type="button" class="buttons buttons--filter">Маркетинг</button>
             </li>
           </ul>
           <!-- Картки -->
@@ -291,8 +289,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-first-box">
-          <a href="./index.html" lang="en" class="logo"
-            >Web <span class="logo-part">Studio</span></a
+          <a href="./index.html" lang="en" class="logo logo--foot"
+            >Web <span class="logo__part logo__part--white">Studio</span></a
           >
           <address class="foot-adress">
             <ul class="list">
@@ -316,30 +314,30 @@
         </div>
         <div class="footer-second-box">
           <p class="footer-text">приєднуйтесь</p>
-          <ul class="soc-list">
-            <li class="soc-items">
-              <a href="" class="soc-ico-link">
+          <ul class="soc">
+            <li class="soc-items soc-items--foot">
+              <a href="" class="soc-link">
                 <svg class="soc-ico" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-items">
-              <a href="" class="soc-ico-link">
+            <li class="soc-items soc-items--foot">
+              <a href="" class="soc-link">
                 <svg class="soc-ico" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-items">
-              <a href="" class="soc-ico-link">
+            <li class="soc-items soc-items--foot">
+              <a href="" class="soc-link">
                 <svg class="soc-ico" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="soc-items">
-              <a href="" class="soc-ico-link">
+            <li class="soc-items soc-items--foot">
+              <a href="" class="soc-link">
                 <svg class="soc-ico" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -361,9 +359,8 @@
                 name="email"
                 placeholder="E-mail" />
             </label>
-
-            <button type="submit" class="form-btn buttons">
-              <span class="form-btn-text"> Підписатися </span>
+            <button type="submit" class="buttons buttons--foot-form">
+              Підписатися
               <svg class="form-btn-ico" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
